@@ -22,6 +22,10 @@
 		30F2B70E1415565F00597A7B /* ofxCvHaarFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F2B66E1415565D00597A7B /* ofxCvHaarFinder.cpp */; };
 		30F2B70F1415565F00597A7B /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F2B6701415565D00597A7B /* ofxCvImage.cpp */; };
 		30F2B7101415565F00597A7B /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F2B6731415565D00597A7B /* ofxCvShortImage.cpp */; };
+		A6B83458176C06F900AE38E5 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6B83451176C06F900AE38E5 /* tinyxml.cpp */; };
+		A6B83459176C06F900AE38E5 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6B83453176C06F900AE38E5 /* tinyxmlerror.cpp */; };
+		A6B8345A176C06F900AE38E5 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6B83454176C06F900AE38E5 /* tinyxmlparser.cpp */; };
+		A6B8345B176C06F900AE38E5 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6B83456176C06F900AE38E5 /* ofxXmlSettings.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -175,6 +179,12 @@
 		30F2B6741415565D00597A7B /* ofxCvShortImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCvShortImage.h; sourceTree = "<group>"; };
 		30F2B6751415565D00597A7B /* ofxOpenCv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOpenCv.h; sourceTree = "<group>"; };
 		9D03FCC9156DA82000292683 /* loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loader.h; sourceTree = "<group>"; };
+		A6B83451176C06F900AE38E5 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		A6B83452176C06F900AE38E5 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		A6B83453176C06F900AE38E5 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		A6B83454176C06F900AE38E5 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		A6B83456176C06F900AE38E5 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		A6B83457176C06F900AE38E5 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -568,9 +578,87 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		A6B83449176C06B000AE38E5 /* ofxGameCamera */ = {
+			isa = PBXGroup;
+			children = (
+				A6B8344A176C06B000AE38E5 /* example */,
+				A6B8344E176C06B000AE38E5 /* src */,
+			);
+			path = ofxGameCamera;
+			sourceTree = "<group>";
+		};
+		A6B8344A176C06B000AE38E5 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				A6B8344B176C06B000AE38E5 /* bin */,
+				A6B8344D176C06B000AE38E5 /* src */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		A6B8344B176C06B000AE38E5 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				A6B8344C176C06B000AE38E5 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		A6B8344C176C06B000AE38E5 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A6B8344D176C06B000AE38E5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A6B8344E176C06B000AE38E5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A6B8344F176C06F900AE38E5 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				A6B83450176C06F900AE38E5 /* libs */,
+				A6B83455176C06F900AE38E5 /* src */,
+			);
+			path = ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		A6B83450176C06F900AE38E5 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A6B83451176C06F900AE38E5 /* tinyxml.cpp */,
+				A6B83452176C06F900AE38E5 /* tinyxml.h */,
+				A6B83453176C06F900AE38E5 /* tinyxmlerror.cpp */,
+				A6B83454176C06F900AE38E5 /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		A6B83455176C06F900AE38E5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A6B83456176C06F900AE38E5 /* ofxXmlSettings.cpp */,
+				A6B83457176C06F900AE38E5 /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				A6B8344F176C06F900AE38E5 /* ofxXmlSettings */,
+				A6B83449176C06B000AE38E5 /* ofxGameCamera */,
 				30F2B5011415565D00597A7B /* ofxKinect */,
 				30F2B5961415565D00597A7B /* ofxOpenCv */,
 			);
@@ -755,6 +843,10 @@
 				27974FE3144D1A5A00BF8888 /* registration.c in Sources */,
 				27974FE4144D1A5A00BF8888 /* tilt.c in Sources */,
 				27974FE5144D1A5A00BF8888 /* usb_libusb10.c in Sources */,
+				A6B83458176C06F900AE38E5 /* tinyxml.cpp in Sources */,
+				A6B83459176C06F900AE38E5 /* tinyxmlerror.cpp in Sources */,
+				A6B8345A176C06F900AE38E5 /* tinyxmlparser.cpp in Sources */,
+				A6B8345B176C06F900AE38E5 /* ofxXmlSettings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
